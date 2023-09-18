@@ -96,56 +96,22 @@ public class RegisterPatientController implements Initializable {
     @FXML
     private void buttonRegisterAction(ActionEvent event) {
         
-//        DBConnection.getInstance();
+//        String username = this.textFieldUserName.getText();
+//        String password = this.PasswordField.getText();
+//        String firstName = this.textFieldFirstName.getText();
+//        String lastName = this.textFieldLastName.getText();
+//        String email = this.textFieldEmail.getText();
+//        String phone = this.textFieldPhone.getText();
+//        String gender = this.ToggleGroupGender.getSelectedToggle().toString();
+//        String role = this.ToggleGroupRole.getSelectedToggle().toString();
+//        int age = Integer.parseInt(this.textFieldAge.getText());
 
-        String username = this.textFieldUserName.getText();
-        System.out.println(username);
-        String password = this.PasswordField.getText();
-        System.out.println(password);
-        String firstName = this.textFieldFirstName.getText();
-        System.out.println(firstName);
-        String lastName = this.textFieldLastName.getText();
-        System.out.println(lastName);
-        String email = this.textFieldEmail.getText();
-        System.out.println(email);
-        String phone = this.textFieldPhone.getText();
-        System.out.println(phone);
-        String gender = this.ToggleGroupGender.getSelectedToggle().toString();
-        System.out.println(gender);
-        String role = this.ToggleGroupRole.getSelectedToggle().toString();
-        System.out.println(role);
+//        EntityManagerFactory emf = Persistence.createEntityManagerFactory("Final_Project_Prog3PU");
+//        System.out.println("emf");
+//        UsersJpaController usersController = new UsersJpaController(emf);
+//        System.out.println("usercon");
+//        Users user = new Users(null, username, password, firstName, lastName, age, email, phone, gender, role);
 
-//        Toggle selectedGenderToggle = this.ToggleGroupGender.getSelectedToggle();
-//        if (selectedGenderToggle != null) {
-//            gender = selectedGenderToggle.toString();
-//        }
-
-//        Toggle selectedRoleToggle = this.ToggleGroupRole.getSelectedToggle();
-//        if (selectedRoleToggle != null) {
-//            role = selectedRoleToggle.toString();
-//        }
-
-        int age = Integer.parseInt(this.textFieldAge.getText());
-        System.out.println(age);
-
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("Final_Project_Prog3PU");
-        System.out.println("emf");
-        UsersJpaController usersController = new UsersJpaController(emf);
-        System.out.println("usercon");
-        Users user = new Users(null, username, password, firstName, lastName, age, email, phone, gender, role);
-//        Users user = new Users();
-//        user.setAge(age);
-//        user.setEmail(email);
-//        user.setFirstName(firstName);
-//        user.setGender(gender);
-//        user.setLastName(lastName);
-//        user.setPassword(password);
-//        user.setPhone(phone);
-//        user.setRole(role);
-//        user.setUsername(username);
-        System.out.println("new user");
-        usersController.create(user);
-        System.out.println("create");
     }
 
     @FXML
